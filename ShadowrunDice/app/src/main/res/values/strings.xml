@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShadowrunDice</string>
+    <string name="main_title">Shadowrun Dice</string>
+    <string name="main_select_nb_dice">Select the number of dice</string>
+    <string name="main_select_goal">Select target value</string>
+    <string name="main_btn_throw_again">Retry</string>
+    <string name="mainActivity_formatResult">Result :%d</string>
+</resources>

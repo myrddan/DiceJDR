@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_select_goal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/main_radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/main_radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/main_radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_select_nb_dice" />
+
+
+    <Spinner
+        android:id="@+id/spinner_nb_dice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_throw_again" />
+
+    <EditText
+        android:id="@+id/edit_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:focusable="false" />
+
+
+
+</LinearLayout>
